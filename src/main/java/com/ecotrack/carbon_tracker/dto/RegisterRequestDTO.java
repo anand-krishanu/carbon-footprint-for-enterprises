@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 public class RegisterRequestDTO {
     @NotBlank
-    private String email;
+    private String username;
 
     @NotBlank
     private String password;
