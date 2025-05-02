@@ -15,11 +15,7 @@ public class UserService {
 
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-    public User registerUser(String username, String password, Role role) {
-        User user = new User();
-        user.setUsername(username);
-        user.setPassword(passwordEncoder.encode(password));  // Encrypt password
-        user.setRole(role);
+    public User registerUser(User user) {
         return userRepository.save(user);
     }
 
@@ -27,7 +23,19 @@ public class UserService {
         return userRepository.findByUsername(username);
     }
 
-    public void updateUser(User user) {
-        userRepository.save(user);
+    public User updateUser(Long id, User newUser) {
+        User user = userRepository.findById(id).get();
+        user.setUsername(newUser.getUsername());
+        user.setRole(newUser.getRole());
+
+        if(user.getPassword() != null && !user.getPassword().isEmpty()) {
+            user.setPassword(passwordEncoder.encode(newUser.getPassword()));
+        }
+
+        return userRepository.save(user);
+    }
+
+    public void deleteUser (long id) {
+        userRepository.deleteById(id);
     }
 }
