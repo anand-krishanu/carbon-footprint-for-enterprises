@@ -9,10 +9,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class RegisterRequestDTO {
-    @NotBlank
+
+    @NotBlank(message = "Username is mandatory")
     private String username;
 
-    @NotBlank
+    @NotBlank(message = "Password is mandatory")
     private String password;
 
     @NotNull

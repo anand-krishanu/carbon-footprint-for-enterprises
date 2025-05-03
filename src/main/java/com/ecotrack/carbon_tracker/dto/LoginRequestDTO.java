@@ -7,9 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class LoginRequestDTO {
-    @NotBlank
+    @NotBlank(message = "Username is mandatory")
     private String username;
 
-    @NotBlank
+    @NotBlank(message = "Password is mandatory")
     private String password;
 }
