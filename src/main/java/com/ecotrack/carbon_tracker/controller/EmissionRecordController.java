@@ -5,6 +5,7 @@ import com.ecotrack.carbon_tracker.service.EmissionRecordService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,22 +20,25 @@ public class EmissionRecordController {
         return ResponseEntity.ok(emissionRecordService.getAllEmissionRecords());
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public ResponseEntity<?> getRecordById (@PathVariable Long id) {
         return ResponseEntity.ok(emissionRecordService.getEmissionRecordById(id));
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> addRecord (@RequestBody EmissionRecord record) {
         return ResponseEntity.ok(emissionRecordService.createEmissionRecord(record));
     }
 
     @PutMapping
+    @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> updateRecord (@PathVariable Long id, @RequestBody EmissionRecord record) {
         return ResponseEntity.ok(emissionRecordService.updateEmissionRecord(id, record));
     }
 
     @DeleteMapping
+    @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> deleteRecord (@PathVariable Long id){
         emissionRecordService.deleteEmissionRecord(id);
 

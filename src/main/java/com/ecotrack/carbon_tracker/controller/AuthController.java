@@ -47,6 +47,7 @@ public class AuthController {
         }
     }
 
+    @PostMapping("/login")
     public ResponseEntity<?> login (@RequestBody @Valid LoginRequestDTO user) {
         try {
             Authentication authentication = authenticationManager.authenticate(
