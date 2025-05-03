@@ -1,11 +1,12 @@
 package com.ecotrack.carbon_tracker.service;
 
-import com.ecotrack.carbon_tracker.entity.Role;
 import com.ecotrack.carbon_tracker.entity.User;
 import com.ecotrack.carbon_tracker.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService {
@@ -21,6 +22,16 @@ public class UserService {
 
     public User getUserByUsername(String username) {
         return userRepository.findByUsername(username);
+    }
+
+    public List<User> getAllUser () {
+        return userRepository.findAll();
+    }
+
+    public User getUserById (Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User Not Found!"));
+
     }
 
     public User updateUser(Long id, User newUser) {

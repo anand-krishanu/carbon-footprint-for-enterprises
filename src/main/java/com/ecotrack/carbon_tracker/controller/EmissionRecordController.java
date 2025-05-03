@@ -1,0 +1,43 @@
+package com.ecotrack.carbon_tracker.controller;
+
+import com.ecotrack.carbon_tracker.entity.EmissionRecord;
+import com.ecotrack.carbon_tracker.service.EmissionRecordService;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/record")
+public class EmissionRecordController {
+
+    @Autowired
+    EmissionRecordService emissionRecordService;
+
+    @GetMapping
+    public ResponseEntity<?> allRecords () {
+        return ResponseEntity.ok(emissionRecordService.getAllEmissionRecords());
+    }
+
+    @GetMapping
+    public ResponseEntity<?> getRecordById (@PathVariable Long id) {
+        return ResponseEntity.ok(emissionRecordService.getEmissionRecordById(id));
+    }
+
+    @PostMapping
+    public ResponseEntity<?> addRecord (@RequestBody EmissionRecord record) {
+        return ResponseEntity.ok(emissionRecordService.createEmissionRecord(record));
+    }
+
+    @PutMapping
+    public ResponseEntity<?> updateRecord (@PathVariable Long id, @RequestBody EmissionRecord record) {
+        return ResponseEntity.ok(emissionRecordService.updateEmissionRecord(id, record));
+    }
+
+    @DeleteMapping
+    public ResponseEntity<?> deleteRecord (@PathVariable Long id){
+        emissionRecordService.deleteEmissionRecord(id);
+
+        return ResponseEntity.ok("Record Deleted!");
+    }
+}
