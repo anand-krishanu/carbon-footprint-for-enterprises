@@ -2,7 +2,6 @@
 
 [![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-green.svg)](https://spring.io/projects/spring-boot)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A robust Spring Boot application for tracking organizational carbon emissions with role-based access control and reporting features.
 
@@ -12,15 +11,6 @@ A robust Spring Boot application for tracking organizational carbon emissions wi
 - [Quick Start](#quick-start)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [API Documentation](#api-documentation)
-  - [Authentication](#authentication)
-  - [Emission Records](#emission-records)
-  - [Departments](#departments)
-  - [Reports](#reports)
-- [Example Requests](#example-requests)
-- [Role-Based Access](#role-based-access)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
 
 ## Features
 
@@ -68,7 +58,7 @@ A robust Spring Boot application for tracking organizational carbon emissions wi
    spring.datasource.password=yourpassword
    spring.jpa.hibernate.ddl-auto=update  
    ```
-3. Run The application
+3. Run the application
   ```bash
   ./mvnw spring-boot:run
   ```
