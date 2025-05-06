@@ -1,5 +1,7 @@
 package com.ecotrack.carbon_tracker.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.List;
@@ -11,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class EmissionSource {
 
     @Id
@@ -21,5 +24,6 @@ public class EmissionSource {
     private String sourceName;
 
     @OneToMany(mappedBy = "emissionSource", cascade = CascadeType.ALL)
+    @JsonBackReference
     private List<EmissionRecord> emissionRecords;
 }

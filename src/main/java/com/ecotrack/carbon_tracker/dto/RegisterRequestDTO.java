@@ -19,4 +19,3 @@ public class RegisterRequestDTO {
     @NotNull
     private Role role;
 }
-

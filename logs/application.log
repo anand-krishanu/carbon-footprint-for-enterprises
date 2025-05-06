@@ -1,0 +1,76 @@
+2025-05-06T12:48:14.771+05:30  INFO 1128 --- [carbon-tracker] [main] c.e.c.CarbonTrackerApplication           : Starting CarbonTrackerApplication using Java 17.0.9 with PID 1128 (D:\NCU B. Tech\Semester 4\SpringBoot\carbon-tracker\carbon-footprint-for-enterprises\target\classes started by Krishanu Anand in D:\NCU B. Tech\Semester 4\SpringBoot\carbon-tracker\carbon-footprint-for-enterprises)
+2025-05-06T12:48:14.784+05:30 DEBUG 1128 --- [carbon-tracker] [main] c.e.c.CarbonTrackerApplication           : Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-06T12:48:14.786+05:30  INFO 1128 --- [carbon-tracker] [main] c.e.c.CarbonTrackerApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-06T12:48:16.438+05:30  INFO 1128 --- [carbon-tracker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06T12:48:16.583+05:30  INFO 1128 --- [carbon-tracker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 4 JPA repository interfaces.
+2025-05-06T12:48:17.904+05:30  INFO 1128 --- [carbon-tracker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-06T12:48:17.928+05:30  INFO 1128 --- [carbon-tracker] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-06T12:48:17.928+05:30  INFO 1128 --- [carbon-tracker] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-06T12:48:18.065+05:30  INFO 1128 --- [carbon-tracker] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-06T12:48:18.067+05:30  INFO 1128 --- [carbon-tracker] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3163 ms
+2025-05-06T12:48:18.186+05:30 DEBUG 1128 --- [carbon-tracker] [main] c.e.carbon_tracker.security.JwtFilter    : Filter 'jwtFilter' configured for use
+2025-05-06T12:48:18.446+05:30  INFO 1128 --- [carbon-tracker] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06T12:48:18.590+05:30  INFO 1128 --- [carbon-tracker] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-06T12:48:18.679+05:30  INFO 1128 --- [carbon-tracker] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-06T12:48:19.287+05:30  INFO 1128 --- [carbon-tracker] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06T12:48:19.364+05:30  INFO 1128 --- [carbon-tracker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-06T12:48:21.119+05:30  INFO 1128 --- [carbon-tracker] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59f76e56
+2025-05-06T12:48:21.127+05:30  INFO 1128 --- [carbon-tracker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-06T12:48:21.465+05:30  WARN 1128 --- [carbon-tracker] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06T12:48:21.559+05:30  INFO 1128 --- [carbon-tracker] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06T12:48:23.876+05:30  INFO 1128 --- [carbon-tracker] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06T12:48:24.306+05:30  INFO 1128 --- [carbon-tracker] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06T12:48:25.330+05:30  INFO 1128 --- [carbon-tracker] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-06T12:48:25.331+05:30  WARN 1128 --- [carbon-tracker] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-06T12:48:25.584+05:30  WARN 1128 --- [carbon-tracker] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06T12:48:25.938+05:30 DEBUG 1128 --- [carbon-tracker] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 26 mappings in 'requestMappingHandlerMapping'
+2025-05-06T12:48:26.121+05:30 DEBUG 1128 --- [carbon-tracker] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-06T12:48:26.399+05:30 DEBUG 1128 --- [carbon-tracker] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-06T12:48:26.495+05:30 DEBUG 1128 --- [carbon-tracker] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-06T12:48:26.778+05:30  INFO 1128 --- [carbon-tracker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-06T12:48:26.799+05:30  INFO 1128 --- [carbon-tracker] [main] c.e.c.CarbonTrackerApplication           : Started CarbonTrackerApplication in 12.881 seconds (process running for 13.605)
+2025-05-06T12:48:26.808+05:30  INFO 1128 --- [carbon-tracker] [main] c.e.carbon_tracker.config.StartupLogger  : EcoTrack Application started successfully. Active profile: default
+2025-05-06T12:49:37.918+05:30  INFO 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06T12:49:37.919+05:30  INFO 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-06T12:49:37.921+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-06T12:49:37.922+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-06T12:49:37.923+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-06T12:49:37.930+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@648c80cb
+2025-05-06T12:49:37.933+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@b1d7b09
+2025-05-06T12:49:37.935+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-06T12:49:37.936+05:30  INFO 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2025-05-06T12:49:38.123+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-05-06T12:49:38.136+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecotrack.carbon_tracker.controller.AuthController#login(LoginRequestDTO)
+2025-05-06T12:49:38.402+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ecotrack.carbon_tracker.dto.LoginRequestDTO@ab51e2a]
+2025-05-06T12:49:41.698+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-06T12:49:41.701+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ecotrack.carbon_tracker.dto.AuthResponseDTO@12574394]
+2025-05-06T12:49:41.741+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-06T12:50:12.797+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/report", parameters={}
+2025-05-06T12:50:12.798+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecotrack.carbon_tracker.controller.CarbonReportController#getCarbonSummary()
+2025-05-06T12:50:13.137+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-06T12:50:13.142+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.ecotrack.carbon_tracker.dto.CarbonSummaryDTO@12a4cb3e, com.ecotrack.carbon_tracker.dto.CarbonSu (truncated)...]
+2025-05-06T12:50:13.167+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-06T12:51:09.365+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/api/record/6", parameters={}
+2025-05-06T12:51:09.367+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecotrack.carbon_tracker.controller.EmissionRecordController#deleteRecord(Long)
+2025-05-06T12:51:10.740+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-06T12:51:10.742+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Record Deleted!"]
+2025-05-06T12:51:10.744+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-06T12:51:57.495+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/record", parameters={}
+2025-05-06T12:51:57.496+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecotrack.carbon_tracker.controller.EmissionRecordController#addRecord(EmissionRecord)
+2025-05-06T12:51:57.523+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ecotrack.carbon_tracker.entity.EmissionRecord@75735c5d]
+2025-05-06T12:51:57.659+05:30  INFO 1128 --- [carbon-tracker] [http-nio-8080-exec-6] c.e.c.aspect.EmissionLoggingAspect       : New Emission Record added for Department: null, Amount: 1300.0 CO₂e, Type: Manufacturing Process
+2025-05-06T12:51:57.673+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-06T12:51:57.675+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ecotrack.carbon_tracker.entity.EmissionRecord@75735c5d]
+2025-05-06T12:51:57.681+05:30 DEBUG 1128 --- [carbon-tracker] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-06T12:52:36.916+05:30  INFO 1128 --- [carbon-tracker] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06T12:52:37.706+05:30  INFO 1128 --- [carbon-tracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-06T12:52:37.710+05:30  INFO 1128 --- [carbon-tracker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06T12:52:37.714+05:30  INFO 1128 --- [carbon-tracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-06T12:52:37.734+05:30  INFO 1128 --- [carbon-tracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

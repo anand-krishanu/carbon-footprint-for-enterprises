@@ -34,13 +34,13 @@ public class DepartmentController {
         return ResponseEntity.ok(departmentService.createDepartment(department));
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> updateDepartment (@PathVariable Long id, @RequestBody Department department) {
         return ResponseEntity.ok(departmentService.updateDepartment(id, department));
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> deleteDepartment (@PathVariable Long id) {
         departmentService.deleteDepartment(id);

@@ -16,7 +16,7 @@ import java.time.Instant;
 @Component
 public class EmissionLoggingAspect {
 
-    @AfterReturning(pointcut = "exectution(* com.ecotrack.carbon_tracker.service.EmissionRecordService.createEmissionRecord(..)", returning = "result")
+    @AfterReturning(pointcut = "execution(* com.ecotrack.carbon_tracker.service.EmissionRecordService.createEmissionRecord(..))", returning = "result")
     public void logEmissionRecordCreation (EmissionRecord result) {
         if(result != null) {
             log.info("New Emission Record added for Department: {}, Amount: {} CO₂e, Type: {}",

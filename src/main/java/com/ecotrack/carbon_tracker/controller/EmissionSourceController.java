@@ -30,13 +30,13 @@ public class EmissionSourceController {
         return ResponseEntity.ok(emissionSourceService.createEmissionSource(source));
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> updateRecord (@PathVariable Long id, @RequestBody EmissionSource source) {
         return ResponseEntity.ok(emissionSourceService.updateEmissionSource(id, source));
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<?> deleteRecord (@PathVariable Long id){
         emissionSourceService.deleteEmissionSource(id);
