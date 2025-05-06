@@ -47,7 +47,7 @@ A robust Spring Boot application for tracking organizational carbon emissions wi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/carbon-footprint-tracker.git
+   git clone https://https://github.com/anand-krishanu/carbon-footprint-for-enterprises.git
    cd carbon-footprint-tracker
    ```
 
